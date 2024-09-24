@@ -1,0 +1,5 @@
+npm test 
+
+node 
+{ average } = require('./utils/for_testing')
+average('test')  // It should return 'tset'
