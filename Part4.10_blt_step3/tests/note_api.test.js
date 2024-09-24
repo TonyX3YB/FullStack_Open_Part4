@@ -2,12 +2,15 @@ const mongoose = require('mongoose');
 const supertest = require('supertest');
 const app = require('../app');
 const api = supertest(app);
+const Blog = require('../models/blog');  // Import the Blog model
 
-const Blog = require('../models/blog');
+beforeAll(async () => {
+  const mongoUri = process.env.TEST_MONGODB_URI;  // Use environment variable
+  await mongoose.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true });
+});
 
 beforeEach(async () => {
-  await Blog.deleteMany({});
-  // Add any initial test data if needed
+  await Blog.deleteMany({});  // Ensure Blog is defined here
 });
 
 test('a valid blog can be added', async () => {
@@ -25,9 +28,9 @@ test('a valid blog can be added', async () => {
     .expect('Content-Type', /application\/json/);
 
   const blogsAtEnd = await api.get('/api/blogs');
-  expect(blogsAtEnd.body).toHaveLength(1); // Adjust this based on how many blogs should exist
+  expect(blogsAtEnd.body).toHaveLength(1);  // Adjust this based on how many blogs should exist
 });
 
 afterAll(async () => {
-  await mongoose.connection.close(); // Ensure connection is closed after tests
+  await mongoose.connection.close();
 });

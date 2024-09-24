@@ -1,10 +1,13 @@
 const mongoose = require('mongoose');
 const Blog = require('../models/blog');
+const supertest = require('supertest');
+const app = require('../app');
+const api = supertest(app);
 
 // Connect to the test database
 beforeAll(async () => {
-  const url = process.env.TEST_MONGODB_URI || 'mongodb+srv://fullstackopen:Helsinki@cluster0.1iwiv.mongodb.net/testNoteApp?retryWrites=true&w=majority&appName=Cluster0';
-  await mongoose.connect(url);
+  const mongoUri = process.env.TEST_MONGODB_URI; // Use environment variable
+  await mongoose.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true });
 }, 60000);  // Increase to 30 seconds
 
 beforeEach(async () => {
