@@ -1,33 +1,49 @@
-require('dotenv').config(); // Load environment variables
+// tests/blog_api.test.js
+require('dotenv').config();
 const mongoose = require('mongoose');
 const supertest = require('supertest');
 const app = require('../app');
 const Blog = require('../models/blog');
+const api = supertest(app);
 
-beforeAll(async () => {
-  // Ensure you are connecting to the test database only once
-  if (mongoose.connection.readyState === 0) {
-    const mongoUri = process.env.TEST_MONGODB_URI;
-    await mongoose.connect(mongoUri, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
-  }
-}, 60000); // Set timeout for connection
+const initialBlogs = [
+  {
+    title: 'Test Blog 1',
+    author: 'Author 1',
+    url: 'http://testurl1.com',
+    likes: 1,
+  },
+  {
+    title: 'Test Blog 2',
+    author: 'Author 2',
+    url: 'http://testurl2.com',
+    likes: 2,
+  },
+];
 
 beforeEach(async () => {
-  // Clear the blogs collection before each test
   await Blog.deleteMany({});
-}, 60000); // Set timeout for cleanup
+  await Blog.insertMany(initialBlogs);
+});
 
-test('blogs are returned as json', async () => {
-  const response = await supertest(app).get('/api/blogs')
+test('updating the number of likes of a blog post', async () => {
+  const blogsAtStart = await Blog.find({});
+  const blogToUpdate = blogsAtStart[0];
+
+  const updatedBlogData = { likes: 10 };
+
+  await api
+    .put(`/api/blogs/${blogToUpdate.id}`)
+    .send(updatedBlogData)
     .expect(200)
     .expect('Content-Type', /application\/json/);
 
-  expect(response.body).toBeDefined(); // Adjust expectations as necessary
+  const blogsAtEnd = await Blog.find({});
+  const updatedBlog = blogsAtEnd[0];
+
+  expect(updatedBlog.likes).toBe(10);
 });
 
-afterAll(async () => {
-  await mongoose.connection.close(); // Close the connection after all tests
+afterAll(() => {
+  mongoose.connection.close();
 });
