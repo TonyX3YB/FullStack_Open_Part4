@@ -36,3 +36,7 @@ module.exports = {
   nonExistingId,
   blogsInDb,
 };
+
+afterAll(async () => {
+  await mongoose.connection.close();
+});

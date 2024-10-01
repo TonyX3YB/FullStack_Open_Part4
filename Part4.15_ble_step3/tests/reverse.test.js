@@ -15,3 +15,7 @@ test('reverse of saippuakauppias (a palindrome)', () => {
   const result = reverse('saippuakauppias');
   expect(result).toBe('saippuakauppias'); // Palindrome remains the same
 });
+
+afterAll(async () => {
+  await mongoose.connection.close();
+});

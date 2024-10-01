@@ -89,3 +89,8 @@ describe('favorite blog', () => {
         assert.strictEqual(result, null)
     })
 })
+
+afterAll(async () => {
+    await mongoose.connection.close();
+  });
+  

@@ -8,16 +8,32 @@ blogsRouter.get('/', async (req, res) => {
 });
 
 // Add a new blog
-blogsRouter.post('/', async (req, res) => {
-  const blog = new Blog(req.body);
+blogsRouter.post('/', async (request, response) => {
+  const body = request.body;
+
+  const blog = new Blog({
+    title: body.title,
+    author: body.author,
+    url: body.url,
+    likes: body.likes || 0
+  });
 
   const savedBlog = await blog.save();
-  res.status(201).json(savedBlog);
+  response.status(201).json(savedBlog);
 });
 
+
 // PUT route to update the number of likes for a blog
-blogsRouter.put('/:id', async (req, res) => {
-  const { likes } = req.body;
+blogsRouter.put('/:id', async (request, response) => {
+  const body = request.body;
+  const updatedBlog = await Blog.findByIdAndUpdate(
+    request.params.id, 
+    { likes: body.likes }, 
+    { new: true, runValidators: true, context: 'query' }
+  );
+  response.json(updatedBlog);
+});
+
 
   // Only update the likes field
   const updatedBlog = await Blog.findByIdAndUpdate(

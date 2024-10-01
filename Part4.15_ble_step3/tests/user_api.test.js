@@ -29,3 +29,4 @@ test('creating a new user succeeds with a fresh username', async () => {
 afterAll(async () => {
     await mongoose.connection.close();
 });
+

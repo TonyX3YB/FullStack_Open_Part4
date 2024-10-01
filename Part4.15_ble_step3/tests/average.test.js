@@ -17,3 +17,8 @@ describe('average', () => {
     expect(result).toBe(3);
   });
 });
+
+afterAll(async () => {
+  await mongoose.connection.close();
+});
+

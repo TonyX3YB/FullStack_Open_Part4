@@ -44,6 +44,7 @@ test('updating the number of likes of a blog post', async () => {
   expect(updatedBlog.likes).toBe(10);
 });
 
-afterAll(() => {
-  mongoose.connection.close();
+afterAll(async () => {
+  await mongoose.connection.close();
 });
+
