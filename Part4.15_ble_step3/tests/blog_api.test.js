@@ -1,4 +1,3 @@
-// tests/blog_api.test.js
 require('dotenv').config();
 const mongoose = require('mongoose');
 const supertest = require('supertest');
@@ -47,4 +46,3 @@ test('updating the number of likes of a blog post', async () => {
 afterAll(async () => {
   await mongoose.connection.close();
 });
-

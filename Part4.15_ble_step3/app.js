@@ -1,9 +1,19 @@
-const express = require('express');
-const mongoose = require('mongoose');
+module.exports = {
+  presets: ['@babel/preset-env'],
+};
+// const express = require('express');
+// const mongoose = require('mongoose');
 require('dotenv').config();
-const usersRouter = require('./routes/users');
-const middleware = require('./utils/middleware');
-const blogsRouter = require('./controllers/blogs');
+// const usersRouter = require('./routes/users');
+// const middleware = require('./utils/middleware');
+// const blogsRouter = require('./controllers/blogs');
+
+import express from 'express';
+import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+import blogsRouter from './controllers/blogs.js';
+import usersRouter from './routes/users.js';
+import middleware from './utils/middleware.js';
 
 
 const app = express();

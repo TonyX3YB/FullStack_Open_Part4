@@ -1,4 +1,5 @@
 // tests/average.test.js
+const mongoose = require('mongoose');
 const { average } = require('../utils/for_testing');
 
 describe('average', () => {

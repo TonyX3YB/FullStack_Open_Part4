@@ -2,6 +2,7 @@
   "name": "notebackend",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "NODE_ENV=production node index.js",
     "dev": "NODE_ENV=development nodemon index.js",
@@ -13,7 +14,6 @@
     "logs:prod": "fly logs",
     "lint": "eslint ."
   },
-  "type": "module",
   "author": "Tony Espinosa",
   "license": "ISC",
   "dependencies": {
@@ -27,12 +27,20 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.25.4",
     "@eslint/js": "^9.10.0",
     "@stylistic/eslint-plugin-js": "^2.8.0",
+    "babel-jest": "^29.7.0",
     "eslint": "^9.10.0",
     "globals": "^15.9.0",
     "nodemon": "^3.1.4",
     "supertest": "^7.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transformIgnorePatterns": [
+      "/node_modules/"
+    ]
   },
   "description": ""
 }

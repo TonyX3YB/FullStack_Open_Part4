@@ -34,8 +34,18 @@ blogsRouter.put('/:id', async (request, response) => {
   response.json(updatedBlog);
 });
 
+blogsRouter.get('/:id', async (req, res) => {
+  const blog = await Blog.findById(req.params.id);
+  if (blog) {
+    res.json(blog);
+  } else {
+    res.status(404).end();
+  }
+});
 
   // Only update the likes field
+  const updateBlog = async (req, res) => {
+
   const updatedBlog = await Blog.findByIdAndUpdate(
     req.params.id,
     { likes },
@@ -47,6 +57,6 @@ blogsRouter.put('/:id', async (request, response) => {
   } else {
     res.status(404).end();
   }
-});
-
+  }
+  
 module.exports = blogsRouter;

@@ -1,4 +1,5 @@
 // tests/reverse.test.js
+const mongoose = require('mongoose');
 const { reverse } = require('../utils/for_testing');
 
 test('reverse of a', () => {
