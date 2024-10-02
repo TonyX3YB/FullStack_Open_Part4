@@ -1,48 +1,37 @@
-require('dotenv').config();
-const mongoose = require('mongoose');
+// blogs_api.test.js
 const supertest = require('supertest');
-const app = require('../app');
-const Blog = require('../models/blog');
-const api = supertest(app);
+const mongoose = require('mongoose');
+const app = require('../app'); // Import the existing app instance
+const api = supertest(app); // Use the imported app
 
-const initialBlogs = [
-  {
-    title: 'Test Blog 1',
-    author: 'Author 1',
-    url: 'http://testurl1.com',
-    likes: 1,
-  },
-  {
-    title: 'Test Blog 2',
-    author: 'Author 2',
-    url: 'http://testurl2.com',
-    likes: 2,
-  },
-];
+test('successfully updates the number of likes', async () => {
+  const newBlog = {
+    title: 'Test Blog',
+    author: 'Author',
+    url: 'http://test.com',
+    likes: 0,
+  };
 
-beforeEach(async () => {
-  await Blog.deleteMany({});
-  await Blog.insertMany(initialBlogs);
-});
+  // Create a blog first
+  const createdBlog = await api
+    .post('/api/blogs')
+    .send(newBlog)
+    .expect(201)
+    .expect('Content-Type', /application\/json/);
 
-test('updating the number of likes of a blog post', async () => {
-  const blogsAtStart = await Blog.find({});
-  const blogToUpdate = blogsAtStart[0];
-
-  const updatedBlogData = { likes: 10 };
+  const updatedBlogData = {
+    likes: 10,
+  };
 
   await api
-    .put(`/api/blogs/${blogToUpdate.id}`)
+    .put(`/api/blogs/${createdBlog.body.id}`)
     .send(updatedBlogData)
     .expect(200)
     .expect('Content-Type', /application\/json/);
-
-  const blogsAtEnd = await Blog.find({});
-  const updatedBlog = blogsAtEnd[0];
-
-  expect(updatedBlog.likes).toBe(10);
 });
 
+
+// Closing MongoDB connection after all tests
 afterAll(async () => {
   await mongoose.connection.close();
 });

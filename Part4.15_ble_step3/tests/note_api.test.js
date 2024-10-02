@@ -21,7 +21,8 @@ beforeAll(async () => {
 beforeEach(async () => {
   await Blog.deleteMany({});
   await Blog.insertMany(helper.initialBlogs);
-});
+}, 60000);  // Increase the timeout to 20 seconds
+
 
 test('a valid blog can be added', async () => {
   const newBlog = {

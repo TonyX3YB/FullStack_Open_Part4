@@ -8,9 +8,10 @@ const api = supertest(app);
 const mongoUri = process.env.TEST_MONGODB_URI;
 
 beforeAll(async () => {
-  if (mongoose.connection.readyState === 0) {
-    // await mongoose.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true });
-  }
+  await mongoose.connect(process.env.TEST_MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
 }, 60000);
 
 beforeEach(async () => {

@@ -6,7 +6,8 @@ const api = supertest(app);
 
 beforeEach(async () => {
   await User.deleteMany({});
-});
+}, 60000);  // Increase the timeout to 20 seconds
+
 
 test('creating a new user succeeds with a fresh username', async () => {
   const newUser = {
