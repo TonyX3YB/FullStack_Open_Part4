@@ -19,6 +19,15 @@ router.post('/', async (req, res) => {
     user: user._id // Assigning the user as the creator
   });
 
+  // routes/blogs.js
+router.get('/', async (req, res) => {
+    const blogs = await Blog.find({}).populate('user', {
+      username: 1,
+      name: 1,
+    });
+    res.json(blogs);
+  });  
+
   const savedBlog = await blog.save();
   
   // Populate the creator's user information before responding
