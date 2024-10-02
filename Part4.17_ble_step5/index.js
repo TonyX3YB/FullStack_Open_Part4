@@ -1,11 +1,16 @@
 // index.js
-const http = require('http');
-const mongoose = require('mongoose');
-const app = require('./app'); // Import the app from app.js
-const config = require('./utils/config');
+import { createServer } from 'http';
+import { connect } from 'mongoose';
+import app from './app.js'; // Import the app from app.js
+import { config } from './utils/config.js'; // Import the config
+import dotenv from 'dotenv';
+
+dotenv.config(); // Load environment variables
+
+const PORT = process.env.PORT || 3003;
 
 // MongoDB connection
-mongoose.connect(process.env.MONGODB_URI, {
+connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
@@ -17,8 +22,8 @@ mongoose.connect(process.env.MONGODB_URI, {
   });
 
 // Create and start the HTTP server
-const server = http.createServer(app);
+const server = createServer(app);
 
-server.listen(config.PORT, () => {
-  console.log(`Server running on port ${config.PORT}`);
+server.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });

@@ -1,7 +1,7 @@
 // routes/users.js
-const express = require('express');
-const bcrypt = require('bcrypt');
-const User = require('../models/user');
+import express from 'express';
+import bcrypt from 'bcrypt';
+import User from '../models/user.js';
 
 const usersRouter = express.Router();
 
@@ -38,4 +38,4 @@ usersRouter.get('/', async (req, res) => {
     res.json(users);
 });
 
-module.exports = usersRouter;
+export default usersRouter;

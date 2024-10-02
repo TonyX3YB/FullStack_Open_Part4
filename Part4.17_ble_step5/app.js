@@ -1,12 +1,15 @@
 // app.js
-const express = require('express');
-const http = require('http');
-const mongoose = require('mongoose'); // Import mongoose
-const cors = require('cors');
-const blogsRouter = require('./controllers/blogs');
-const usersRouter = require('./routes/users');
-const middleware = require('./utils/middleware');
-require('dotenv').config();
+import express from 'express';
+import http from 'http'; // Change require to import
+import mongoose from 'mongoose'; // Change require to import
+import cors from 'cors';
+import blogsRouter from './controllers/blogs.js'; // Add .js to the import path
+import usersRouter from './routes/users.js'; // Add .js to the import path
+import { unknownEndpoint, errorHandler } from './utils/middleware.js';
+import dotenv from 'dotenv';
+
+// Load environment variables
+dotenv.config();
 
 const app = express(); // Declare app once
 const server = http.createServer(app); // Create the server with the app
@@ -20,8 +23,8 @@ app.use('/api/users', usersRouter);
 app.use('/api/blogs', blogsRouter);
 
 // Error handling middleware
-app.use(middleware.unknownEndpoint);
-app.use(middleware.errorHandler);
+app.use(unknownEndpoint);
+app.use(errorHandler);
 
 // Connect to MongoDB
 const connectToDatabase = async () => {
@@ -46,5 +49,4 @@ const startServer = async () => {
 
 startServer();
 
-// Export the app and server for use in tests
-module.exports = { app, server };
+export default app; // Export the app as the default

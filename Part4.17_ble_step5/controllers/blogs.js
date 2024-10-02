@@ -1,5 +1,8 @@
-const blogsRouter = require('express').Router();
-const Blog = require('../models/blog');
+// controllers/blogs.js
+import express from 'express';
+import Blog from '../models/blog.js';
+
+const blogsRouter = express.Router();
 
 // Get all blogs
 blogsRouter.get('/', async (req, res) => {
@@ -22,7 +25,6 @@ blogsRouter.post('/', async (request, response) => {
   response.status(201).json(savedBlog);
 });
 
-
 // PUT route to update the number of likes for a blog
 blogsRouter.put('/:id', async (request, response) => {
   const body = request.body;
@@ -34,6 +36,7 @@ blogsRouter.put('/:id', async (request, response) => {
   response.json(updatedBlog);
 });
 
+// Get blog by id
 blogsRouter.get('/:id', async (req, res) => {
   const blog = await Blog.findById(req.params.id);
   if (blog) {
@@ -43,20 +46,5 @@ blogsRouter.get('/:id', async (req, res) => {
   }
 });
 
-  // Only update the likes field
-  const updateBlog = async (req, res) => {
-
-  const updatedBlog = await Blog.findByIdAndUpdate(
-    req.params.id,
-    { likes },
-    { new: true, runValidators: true, context: 'query' } // Options to return updated document and validate
-  );
-
-  if (updatedBlog) {
-    res.json(updatedBlog);
-  } else {
-    res.status(404).end();
-  }
-  }
-  
-module.exports = blogsRouter;
+// Export the router
+export default blogsRouter;
