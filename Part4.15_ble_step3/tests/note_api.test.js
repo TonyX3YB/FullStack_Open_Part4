@@ -9,14 +9,11 @@ const helper = require('./test_helper');
 const api = supertest(app);
 
 beforeAll(async () => {
-  const mongoUri = process.env.TEST_MONGODB_URI;
+  await mongoose.connect(process.env.TEST_MONGODB_URI);
   if (!mongoUri) {
     throw new Error('TEST_MONGODB_URI is not defined');
   }
-  await mongoose.connect(mongoUri, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
+  await mongoose.connect(mongoUri);
 }, 60000);
 
 beforeEach(async () => {
