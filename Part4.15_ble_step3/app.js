@@ -1,15 +1,15 @@
 // app.js
 const express = require('express');
 const http = require('http');
-const server = http.createServer(app);
-
+const mongoose = require('mongoose'); // Import mongoose
+const cors = require('cors');
 const blogsRouter = require('./controllers/blogs');
 const usersRouter = require('./routes/users');
 const middleware = require('./utils/middleware');
-const cors = require('cors');
 require('dotenv').config();
 
 const app = express(); // Declare app once
+const server = http.createServer(app); // Create the server with the app
 
 // Middleware setup
 app.use(cors());
@@ -23,11 +23,28 @@ app.use('/api/blogs', blogsRouter);
 app.use(middleware.unknownEndpoint);
 app.use(middleware.errorHandler);
 
-afterAll(async () => {
-  await mongoose.connection.close();
-  server.close(); // Close the server after all tests
-});
+// Connect to MongoDB
+const connectToDatabase = async () => {
+  try {
+    await mongoose.connect(process.env.MONGODB_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    console.log('Connected to MongoDB');
+  } catch (error) {
+    console.error('Error connecting to MongoDB:', error.message);
+  }
+};
 
-module.exports = server;
-// Export app for use in index.js and tests
-module.exports = app;
+// Start the server
+const startServer = async () => {
+  await connectToDatabase();
+  server.listen(process.env.PORT || 3003, () => {
+    console.log(`Server running on port ${process.env.PORT || 3003}`);
+  });
+};
+
+startServer();
+
+// Export the app and server for use in tests
+module.exports = { app, server };

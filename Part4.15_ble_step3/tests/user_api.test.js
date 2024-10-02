@@ -1,13 +1,22 @@
+// tests/user_api.test.js
+require('dotenv').config();
 const mongoose = require('mongoose');
 const supertest = require('supertest');
 const app = require('../app');
 const User = require('../models/user');
+
 const api = supertest(app);
+
+beforeAll(async () => {
+  await mongoose.connect(process.env.TEST_MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
+}, 60000);
 
 beforeEach(async () => {
   await User.deleteMany({});
-}, 60000);  // Increase the timeout to 20 seconds
-
+}, 60000); 
 
 test('creating a new user succeeds with a fresh username', async () => {
   const newUser = {

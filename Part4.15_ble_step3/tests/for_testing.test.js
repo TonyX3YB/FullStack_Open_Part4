@@ -1,11 +1,11 @@
+// tests/for_testing.test.js
 require('dotenv').config();
 const mongoose = require('mongoose');
-const Blog = require('../models/blog');
 const supertest = require('supertest');
 const app = require('../app');
-const api = supertest(app);
+const Blog = require('../models/blog');
 
-const mongoUri = process.env.TEST_MONGODB_URI;
+const api = supertest(app);
 
 beforeAll(async () => {
   await mongoose.connect(process.env.TEST_MONGODB_URI, {
@@ -26,7 +26,12 @@ test('a valid blog post is saved to the database', async () => {
     likes: 0,
   };
 
-  const response = await api.post('/api/blogs').send(testBlog).expect(201);
+  const response = await api
+    .post('/api/blogs')
+    .send(testBlog)
+    .expect(201)
+    .expect('Content-Type', /application\/json/);
+
   expect(response.body.title).toBe('Test Blog');
 
   const blogs = await Blog.find({});
@@ -36,4 +41,4 @@ test('a valid blog post is saved to the database', async () => {
 
 afterAll(async () => {
   await mongoose.connection.close();
-}, 60000);
+});

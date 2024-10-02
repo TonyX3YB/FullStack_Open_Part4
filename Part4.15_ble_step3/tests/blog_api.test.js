@@ -1,10 +1,22 @@
-// blogs_api.test.js
-const server = require('../app'); // Import the server
-
-const supertest = require('supertest');
+// tests/blog_api.test.js
+require('dotenv').config();
 const mongoose = require('mongoose');
-const app = require('../app'); // Import the existing app instance
-const api = supertest(app); // Use the imported app
+const supertest = require('supertest');
+const app = require('../app');
+const Blog = require('../models/blog');
+
+const api = supertest(app);
+
+beforeAll(async () => {
+  await mongoose.connect(process.env.TEST_MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
+}, 60000);
+
+beforeEach(async () => {
+  await Blog.deleteMany({});
+}, 60000);
 
 test('successfully updates the number of likes', async () => {
   const newBlog = {
@@ -25,16 +37,15 @@ test('successfully updates the number of likes', async () => {
     likes: 10,
   };
 
-  await api
+  const response = await api
     .put(`/api/blogs/${createdBlog.body.id}`)
     .send(updatedBlogData)
     .expect(200)
     .expect('Content-Type', /application\/json/);
+
+  expect(response.body.likes).toBe(10);
 });
 
-
-// Closing MongoDB connection after all tests
 afterAll(async () => {
   await mongoose.connection.close();
-  server.close(); // Close server
 });
