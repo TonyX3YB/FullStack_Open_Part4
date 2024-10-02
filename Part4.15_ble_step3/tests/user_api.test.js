@@ -8,8 +8,10 @@ const User = require('../models/user');
 const api = supertest(app);
 
 beforeAll(async () => {
+  if (mongoose.connection.readyState === 0) { // 0 means disconnected
   await mongoose.connect(process.env.TEST_MONGODB_URI);
-}, 60000);
+}}, 60000);
+
 
 beforeEach(async () => {
   await User.deleteMany({});
