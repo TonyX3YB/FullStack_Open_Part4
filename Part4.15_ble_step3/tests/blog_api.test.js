@@ -1,4 +1,6 @@
 // blogs_api.test.js
+const server = require('../app'); // Import the server
+
 const supertest = require('supertest');
 const mongoose = require('mongoose');
 const app = require('../app'); // Import the existing app instance
@@ -34,4 +36,5 @@ test('successfully updates the number of likes', async () => {
 // Closing MongoDB connection after all tests
 afterAll(async () => {
   await mongoose.connection.close();
+  server.close(); // Close server
 });

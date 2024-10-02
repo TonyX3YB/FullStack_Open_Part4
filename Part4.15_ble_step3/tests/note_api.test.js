@@ -11,11 +11,6 @@ beforeAll(async () => {
   if (!mongoUri) {
     throw new Error('TEST_MONGODB_URI is not defined');
   }
-  
-//   await mongoose.connect(mongoUri, {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//   });
 });
 
 beforeEach(async () => {
