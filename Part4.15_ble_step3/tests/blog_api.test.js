@@ -2,7 +2,7 @@
 require('dotenv').config();
 const mongoose = require('mongoose');
 const supertest = require('supertest');
-const app = require('../app');
+const { app, server } = require('../app'); // Updated to import server
 const Blog = require('../models/blog');
 
 const api = supertest(app);
@@ -48,4 +48,5 @@ test('successfully updates the number of likes', async () => {
 
 afterAll(async () => {
   await mongoose.connection.close();
+  await server.close(); // Close the server after all tests
 });

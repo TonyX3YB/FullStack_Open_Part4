@@ -2,7 +2,7 @@
 require('dotenv').config();
 const mongoose = require('mongoose');
 const supertest = require('supertest');
-const app = require('../app');
+const { app, server } = require('../app'); // Updated to import server
 const User = require('../models/user');
 
 const api = supertest(app);
@@ -38,4 +38,5 @@ test('creating a new user succeeds with a fresh username', async () => {
 
 afterAll(async () => {
   await mongoose.connection.close();
+  await server.close(); // Close the server after all tests
 });
