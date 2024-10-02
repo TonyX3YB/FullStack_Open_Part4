@@ -9,12 +9,13 @@ const helper = require('./test_helper');
 const api = supertest(app);
 
 beforeAll(async () => {
+  if (mongoose.connection.readyState === 0) { // 0 means disconnected
   await mongoose.connect(process.env.TEST_MONGODB_URI);
   if (!mongoUri) {
     throw new Error('TEST_MONGODB_URI is not defined');
   }
   await mongoose.connect(mongoUri);
-}, 60000);
+}}, 60000);
 
 beforeEach(async () => {
   await Blog.deleteMany({});
