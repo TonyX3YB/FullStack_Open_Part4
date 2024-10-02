@@ -1,3 +1,4 @@
+import mongoose from 'mongoose';
 const Blog = require('../models/blog');
 
 const initialBlogs = [

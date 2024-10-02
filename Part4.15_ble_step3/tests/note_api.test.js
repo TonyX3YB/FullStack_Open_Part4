@@ -8,10 +8,14 @@ const Blog = require('../models/blog');
 
 beforeAll(async () => {
   const mongoUri = process.env.TEST_MONGODB_URI;
-  await mongoose.connect(mongoUri, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
+  if (!mongoUri) {
+    throw new Error('TEST_MONGODB_URI is not defined');
+  }
+  
+//   await mongoose.connect(mongoUri, {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//   });
 });
 
 beforeEach(async () => {
