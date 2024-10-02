@@ -8,10 +8,7 @@ const User = require('../models/user');
 const api = supertest(app);
 
 beforeAll(async () => {
-  await mongoose.connect(process.env.TEST_MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
+  await mongoose.connect(process.env.TEST_MONGODB_URI);
 }, 60000);
 
 beforeEach(async () => {
