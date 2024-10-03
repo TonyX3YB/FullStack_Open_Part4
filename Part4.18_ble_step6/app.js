@@ -27,7 +27,7 @@ app.use('/api/login', loginRouter);
 
 // Error handling middleware
 const errorHandler = (error, request, response, next) => {
-  
+  if (error.name ===)
 }
 app.use(unknownEndpoint);
 app.use(errorHandler);
