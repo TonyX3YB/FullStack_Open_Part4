@@ -26,6 +26,7 @@ app.use('/api/login', loginRouter);
 
 
 // Error handling middleware
+const errorHandler
 app.use(unknownEndpoint);
 app.use(errorHandler);
 
