@@ -1,50 +1,45 @@
-// controllers/blogs.js
-import express from 'express';
-import Blog from '../models/blog.js';
+const jwt = require('jsonwebtoken');
+const blogsRouter = require('express').Router();
+const Blog = require('../models/blog');
+const User = require('../models/user');
 
-const blogsRouter = express.Router();
+// Helper function to extract token
+const getTokenFrom = request => {
+  const authorization = request.get('authorization');
+  if (authorization && authorization.startsWith('Bearer ')) {
+    return authorization.replace('Bearer ', '');
+  }
+  return null;
+};
 
-// Get all blogs
-blogsRouter.get('/', async (req, res) => {
-  const blogs = await Blog.find({});
-  res.json(blogs);
-});
-
-// Add a new blog
 blogsRouter.post('/', async (request, response) => {
   const body = request.body;
 
+  // Verify the token
+  const token = getTokenFrom(request);
+  const decodedToken = jwt.verify(token, process.env.SECRET);
+  if (!decodedToken.id) {
+    return response.status(401).json({ error: 'token invalid' });
+  }
+
+  // Find the user from the token
+  const user = await User.findById(decodedToken.id);
+
+  // Create new blog post
   const blog = new Blog({
     title: body.title,
     author: body.author,
     url: body.url,
-    likes: body.likes || 0
+    likes: body.likes || 0,
+    user: user._id,
   });
 
+  // Save blog post and update user's blog list
   const savedBlog = await blog.save();
+  user.blogs = user.blogs.concat(savedBlog._id);
+  await user.save();
+
   response.status(201).json(savedBlog);
 });
 
-// PUT route to update the number of likes for a blog
-blogsRouter.put('/:id', async (request, response) => {
-  const body = request.body;
-  const updatedBlog = await Blog.findByIdAndUpdate(
-    request.params.id, 
-    { likes: body.likes }, 
-    { new: true, runValidators: true, context: 'query' }
-  );
-  response.json(updatedBlog);
-});
-
-// Get blog by id
-blogsRouter.get('/:id', async (req, res) => {
-  const blog = await Blog.findById(req.params.id);
-  if (blog) {
-    res.json(blog);
-  } else {
-    res.status(404).end();
-  }
-});
-
-// Export the router
-export default blogsRouter;
+module.exports = blogsRouter;
