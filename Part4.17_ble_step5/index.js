@@ -7,7 +7,7 @@ import dotenv from 'dotenv';
 
 dotenv.config(); // Load environment variables
 
-const PORT = process.env.PORT || 3003;
+const PORT = process.env.PORT || 3006;
 
 // MongoDB connection
 connect(process.env.MONGODB_URI, {
