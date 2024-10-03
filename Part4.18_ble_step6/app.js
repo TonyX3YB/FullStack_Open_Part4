@@ -28,7 +28,7 @@ app.use('/api/login', loginRouter);
 // Error handling middleware
 const errorHandler = (error, request, response, next) => {
   if (error.name === 'JsonWebTokenError') {
-    return response.status(401).json
+    return response.status(401).json({ error: })
   }
 }
 app.use(unknownEndpoint);
