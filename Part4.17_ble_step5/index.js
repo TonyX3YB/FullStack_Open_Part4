@@ -24,6 +24,6 @@ connect(process.env.MONGODB_URI, {
 // Create and start the HTTP server
 const server = createServer(app);
 
-server.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+// server.listen(PORT, () => {
+//   console.log(`Server running on port ${PORT}`);
+// });
