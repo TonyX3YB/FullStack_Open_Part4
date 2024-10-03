@@ -22,6 +22,8 @@ app.use(express.json());
 // Define routes
 app.use('/api/users', usersRouter);
 app.use('/api/blogs', blogsRouter);
+app.use('/api/login', loginRouter);
+
 
 // Error handling middleware
 app.use(unknownEndpoint);
