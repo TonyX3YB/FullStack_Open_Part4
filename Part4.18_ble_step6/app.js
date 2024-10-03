@@ -13,6 +13,7 @@ dotenv.config();
 
 const app = express(); // Declare app once
 const server = http.createServer(app); // Create the server with the app
+const loginRouter = require('./controllers/login.js');
 
 // Middleware setup
 app.use(cors());
