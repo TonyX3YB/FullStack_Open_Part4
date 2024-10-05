@@ -44,6 +44,7 @@ Blog Schema model blogSchema.{
   port:
   version:
   conn:
+  server:
 
 }
 
