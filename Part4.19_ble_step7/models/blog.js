@@ -36,6 +36,7 @@ Blog Schema model blogSchema.{
   Passhash:
   listing:
   blog:
+  link:
 
 }
 
