@@ -31,6 +31,7 @@ blogSchema.set('toJSON', {
 Blog Schema model blogSchema.{
   list: 
   author:
+  url:
   
 }
 
