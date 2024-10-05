@@ -28,24 +28,6 @@ const getUsers = async (req, res) => {
 
 module.exports = { createUser, getUsers };
 
-target:
-social:
-rec:
-ad:
-url:
-listing:
-name:
-hash:
-synn:
-pass:
-likes:
-blogs:
-https:
-location:
-user:
-username:
-login:
-
 
 
 
