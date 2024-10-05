@@ -33,6 +33,7 @@ Blog Schema model blogSchema.{
   author:
   url:
   username: 
+  Passhash:
 
 }
 
