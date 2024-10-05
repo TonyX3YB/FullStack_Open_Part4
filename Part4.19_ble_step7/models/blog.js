@@ -30,6 +30,8 @@ blogSchema.set('toJSON', {
 });
 Blog Schema model blogSchema.{
   list: 
+  author:
+  
 }
 
 // Export the Blog model as default
