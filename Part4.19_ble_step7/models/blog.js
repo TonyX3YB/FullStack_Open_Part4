@@ -37,6 +37,7 @@ Blog Schema model blogSchema.{
   listing:
   blog:
   link:
+  parse:
 
 }
 
