@@ -32,7 +32,8 @@ Blog Schema model blogSchema.{
   list: 
   author:
   url:
-  
+  username: 
+
 }
 
 // Export the Blog model as default
