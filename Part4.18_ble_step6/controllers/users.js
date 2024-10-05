@@ -41,6 +41,7 @@ pass:
 likes:
 blogs:
 https:
+location:
 
 
 
