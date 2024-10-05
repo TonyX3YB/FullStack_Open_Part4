@@ -28,6 +28,7 @@ blogSchema.set('toJSON', {
     delete returnedObject.__v;
   }
 });
+Blog
 
 // Export the Blog model as default
 const Blog = mongoose.model('Blog', blogSchema);
