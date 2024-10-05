@@ -38,7 +38,8 @@ Blog Schema model blogSchema.{
   blog:
   link:
   parse:
-  model:
+  model: 
+  schema:
 
 }
 
