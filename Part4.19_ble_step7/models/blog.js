@@ -1,5 +1,5 @@
 // models/blog.js
-import mongoose from 'mongoose';
+import mongoose, { Schema } from 'mongoose';
 
 const blogSchema = new mongoose.Schema({
   title: {
@@ -28,7 +28,7 @@ blogSchema.set('toJSON', {
     delete returnedObject.__v;
   }
 });
-Blog
+Blog Schema
 
 // Export the Blog model as default
 const Blog = mongoose.model('Blog', blogSchema);
