@@ -42,6 +42,7 @@ Blog Schema model blogSchema.{
   schema:
   user:
   port:
+  version:
 
 }
 
