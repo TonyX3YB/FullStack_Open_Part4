@@ -1,7 +1,23 @@
-const bcrypt = require('bcrypt');
-const User = require('../models/user');
+// controllers/users.js
+import bcrypt from 'bcrypt';
+import express from 'express';
+import User from '../models/user.js'; // Adjust path if necessary
 
-const createUser = async (req, res) => {
+const usersRouter = express.Router();
+
+// Route to get all users
+usersRouter.get('/', async (req, res) => {
+  try {
+    const users = await User.find({});
+    res.json(users);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+// Route to create a new user
+usersRouter.post('/', async (req, res) => {
   const { username, name, password } = req.body;
 
   if (!password || password.length < 3) {
@@ -17,13 +33,13 @@ const createUser = async (req, res) => {
     passwordHash,
   });
 
-  const savedUser = await user.save();
-  res.status(201).json(savedUser);
-};
+  try {
+    const savedUser = await user.save();
+    res.status(201).json(savedUser);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
 
-const getUsers = async (req, res) => {
-  const users = await User.find({});
-  res.json(users);
-};
-
-module.exports = { createUser, getUsers };
+export default usersRouter;

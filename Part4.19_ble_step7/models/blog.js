@@ -1,5 +1,4 @@
-// models/blog.js
-import mongoose, { model, Schema } from 'mongoose';
+import mongoose from 'mongoose';
 
 const blogSchema = new mongoose.Schema({
   title: {
@@ -17,7 +16,7 @@ const blogSchema = new mongoose.Schema({
   },
   user: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'User' // Reference to the User model
+    ref: 'User'
   }
 });
 
@@ -29,6 +28,6 @@ blogSchema.set('toJSON', {
   }
 });
 
-// Export the Blog model as default
 const Blog = mongoose.model('Blog', blogSchema);
+
 export default Blog;

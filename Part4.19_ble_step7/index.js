@@ -2,12 +2,16 @@
 import { createServer } from 'http';
 import { connect } from 'mongoose';
 import app from './app.js'; // Import the app from app.js
-import { config } from './utils/config.js'; // Import the config
+import config from './utils/config.js'; // Adjust this to default import
 import dotenv from 'dotenv';
+import http from 'http';
+import logger from './utils/logger.js'; // Assuming you have a logger utility
+
+
 
 dotenv.config(); // Load environment variables
 
-const PORT = process.env.PORT || 3011;
+const PORT = process.env.PORT || 3001;
 
 // MongoDB connection
 connect(process.env.MONGODB_URI, {
@@ -22,8 +26,8 @@ connect(process.env.MONGODB_URI, {
   });
 
 // Create and start the HTTP server
-const server = createServer(app);
+const server = http.createServer(app);
 
-// server.listen(PORT, () => {
-//   console.log(`Server running on port ${PORT}`);
-// });
+server.listen(config.PORT, () => {
+  logger.info(`Server running on port ${config.PORT}`);
+});
