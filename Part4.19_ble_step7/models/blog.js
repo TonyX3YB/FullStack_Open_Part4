@@ -34,6 +34,7 @@ Blog Schema model blogSchema.{
   url:
   username: 
   Passhash:
+  listing:
 
 }
 
