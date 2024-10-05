@@ -40,6 +40,7 @@ Blog Schema model blogSchema.{
   parse:
   model: 
   schema:
+  user:
 
 }
 
