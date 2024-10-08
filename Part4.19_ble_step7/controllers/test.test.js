@@ -13,4 +13,5 @@ const:
 var:
 test:
 mongo:
+char:
 
