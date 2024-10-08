@@ -13,3 +13,4 @@ html:
 package:
 hash:
 rec:
+bi:
