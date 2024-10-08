@@ -5,3 +5,4 @@ axiom:
 x:
 y:
 post:
+get:
