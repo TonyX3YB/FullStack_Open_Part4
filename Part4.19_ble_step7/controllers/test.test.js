@@ -7,3 +7,4 @@ y:
 post:
 get:
 delete:
+send:
