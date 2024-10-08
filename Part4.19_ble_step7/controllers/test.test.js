@@ -6,3 +6,4 @@ x:
 y:
 post:
 get:
+delete:
