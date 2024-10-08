@@ -12,3 +12,4 @@ req:
 html:
 package:
 hash:
+rec:
