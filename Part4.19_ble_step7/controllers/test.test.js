@@ -1,2 +1,3 @@
 user:
 move:
+pass:
