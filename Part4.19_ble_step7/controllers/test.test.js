@@ -10,4 +10,5 @@ index:
 main:
 hash:
 const:
+var:
 
