@@ -7,3 +7,4 @@ hash:
 const:
 html:
 key:
+token:
