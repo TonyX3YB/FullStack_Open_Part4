@@ -15,3 +15,4 @@ api:
 login:
 valid:
 async:
+vite:
