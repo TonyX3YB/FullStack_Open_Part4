@@ -4,3 +4,4 @@ user:
 send:
 char:
 hash:
+const:
