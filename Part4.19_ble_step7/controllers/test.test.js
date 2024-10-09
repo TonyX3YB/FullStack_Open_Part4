@@ -3,3 +3,4 @@ creds:
 user:
 send:
 char:
+hash:
