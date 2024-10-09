@@ -5,3 +5,4 @@ send:
 char:
 hash:
 const:
+html:
