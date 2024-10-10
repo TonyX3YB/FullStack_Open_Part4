@@ -6,3 +6,4 @@ req:
 rec:
 post:
 send:
+del:
