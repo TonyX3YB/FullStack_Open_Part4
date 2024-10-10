@@ -7,3 +7,4 @@ rec:
 post:
 send:
 del:
+vite:
