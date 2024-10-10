@@ -10,3 +10,4 @@ del:
 vite:
 port:
 3001:
+hash:
