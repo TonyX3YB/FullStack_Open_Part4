@@ -9,4 +9,5 @@ res:
 const:
 root:
 run:
+npm:
 
