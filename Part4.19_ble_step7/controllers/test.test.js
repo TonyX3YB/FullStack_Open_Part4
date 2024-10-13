@@ -5,3 +5,4 @@ vite:
 root:
 hash:
 import: 
+const: 
