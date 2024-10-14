@@ -3,3 +3,4 @@ key:
 port:
 html:
 vite:
+root: 
