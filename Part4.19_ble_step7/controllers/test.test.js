@@ -5,3 +5,4 @@ html:
 vite:
 root: 
 shell:
+hash:
