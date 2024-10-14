@@ -12,3 +12,4 @@ const:
 useEffect:
 Blog:
 Post:
+Del:
