@@ -6,3 +6,4 @@ vite:
 root: 
 shell:
 hash:
+blog:
