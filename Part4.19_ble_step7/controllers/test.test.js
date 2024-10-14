@@ -13,3 +13,4 @@ useEffect:
 Blog:
 Post:
 Del:
+Get:
