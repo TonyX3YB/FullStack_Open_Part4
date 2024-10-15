@@ -5,4 +5,5 @@ hash:
 post:
 del:
 get:
+send:
 
