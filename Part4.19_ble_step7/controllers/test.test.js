@@ -4,4 +4,5 @@ key:
 hash:
 post:
 del:
+get:
 
