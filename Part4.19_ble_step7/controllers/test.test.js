@@ -3,4 +3,5 @@ token:
 key:
 hash:
 post:
+del:
 
