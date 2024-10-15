@@ -7,4 +7,5 @@ del:
 get:
 send:
 const:
+await:
 
