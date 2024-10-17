@@ -6,3 +6,4 @@ postMessage;
 post:
 get:
 port:
+del:
