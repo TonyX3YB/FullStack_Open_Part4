@@ -15,3 +15,4 @@ api:
 const:
 return:
 proxy:
+await:
