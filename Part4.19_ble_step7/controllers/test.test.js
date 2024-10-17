@@ -4,3 +4,4 @@ token:
 hash:
 postMessage;
 post:
+get:
