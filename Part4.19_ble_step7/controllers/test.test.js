@@ -9,3 +9,4 @@ port:
 del:
 VirtualType;
 vite:
+blog;
