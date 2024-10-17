@@ -12,3 +12,4 @@ vite:
 blog;
 login:
 api:
+const:
