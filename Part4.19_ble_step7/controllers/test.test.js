@@ -12,3 +12,4 @@ config:
 blog: 
 hash: 
 server: 
+onchange: 
