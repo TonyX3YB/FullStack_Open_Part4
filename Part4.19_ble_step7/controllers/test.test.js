@@ -10,3 +10,4 @@ import:
 json: 
 config: 
 blog: 
+hash: 
