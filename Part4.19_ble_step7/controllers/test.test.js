@@ -8,4 +8,5 @@ delete:
  login: 
 hash: 
 token: 
+key: 
 
