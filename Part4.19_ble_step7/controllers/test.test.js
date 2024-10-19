@@ -3,4 +3,6 @@ port:
 vite: 
 server: 
 post: 
-get: 
+get:
+delete: 
+ 
