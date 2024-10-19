@@ -6,4 +6,5 @@ post:
 get:
 delete: 
  login: 
+hash: 
  
