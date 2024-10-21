@@ -11,3 +11,4 @@ blog:
 post: 
 del: 
 get: 
+api: 
