@@ -11,3 +11,4 @@ vite:
 blog: 
 const: 
 await; 
+root: 
