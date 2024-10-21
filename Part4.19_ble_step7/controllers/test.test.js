@@ -13,3 +13,4 @@ del:
 get: 
 api: 
 login: 
+hash: 
