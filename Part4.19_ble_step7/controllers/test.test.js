@@ -8,3 +8,4 @@ get:
 del: 
 server: 
 vite: 
+blog: 
