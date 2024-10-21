@@ -14,3 +14,4 @@ get:
 api: 
 login: 
 hash: 
+vite: 
