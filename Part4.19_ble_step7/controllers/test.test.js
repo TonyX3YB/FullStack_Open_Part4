@@ -16,3 +16,4 @@ login:
 hash: 
 vite: 
 root: 
+schema: 
