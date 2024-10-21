@@ -5,3 +5,4 @@ hash:
 post: 
 port: 
 get: 
+del: 
