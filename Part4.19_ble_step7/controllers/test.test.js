@@ -7,3 +7,4 @@ port:
 get: 
 del: 
 server: 
+vite: 
