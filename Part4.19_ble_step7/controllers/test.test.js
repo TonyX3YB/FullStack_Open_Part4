@@ -9,3 +9,4 @@ connection:
 return: 
 blog: 
 post: 
+del: 
