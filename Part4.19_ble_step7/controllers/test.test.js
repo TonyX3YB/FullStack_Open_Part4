@@ -9,3 +9,5 @@ del:
 server: 
 vite: 
 blog: 
+const: 
+await; 
