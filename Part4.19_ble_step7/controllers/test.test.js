@@ -9,3 +9,4 @@ blog:
 note: 
 VirtualType; 
 vite: 
+ShadowRoot; 
