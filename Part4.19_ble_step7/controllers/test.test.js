@@ -12,3 +12,4 @@ vite:
 ShadowRoot; 
 const: 
 return: 
+awai: 
