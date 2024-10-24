@@ -6,3 +6,4 @@ post:
 get: 
 del: 
 blog: 
+note: 
