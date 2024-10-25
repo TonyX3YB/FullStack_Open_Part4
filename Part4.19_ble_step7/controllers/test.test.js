@@ -5,3 +5,4 @@ hash:
 blog: 
 api: 
 login: 
+post: 
