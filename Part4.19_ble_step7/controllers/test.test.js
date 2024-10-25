@@ -11,4 +11,6 @@ get:
 del: 
 const: 
 import: 
-awai: 
+await: 
+test: 
+
