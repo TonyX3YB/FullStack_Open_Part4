@@ -14,4 +14,5 @@ post:
 get: 
 del: 
 VibratePattern:
+vite: 
 
