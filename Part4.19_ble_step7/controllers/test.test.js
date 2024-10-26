@@ -12,4 +12,5 @@ blog:
 html: 
 post: 
 get: 
+del: 
 
