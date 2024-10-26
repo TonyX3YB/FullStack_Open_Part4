@@ -13,4 +13,5 @@ html:
 post: 
 get: 
 del: 
+VibratePattern:
 
