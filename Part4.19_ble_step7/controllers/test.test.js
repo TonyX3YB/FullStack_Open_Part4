@@ -11,3 +11,4 @@ get:
 del: 
 html: 
 mongo; 
+uri: 
