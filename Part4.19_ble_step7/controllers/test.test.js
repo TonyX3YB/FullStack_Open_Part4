@@ -8,3 +8,4 @@ VirtualType;
 vite: 
 root: 
 get: 
+del: 
