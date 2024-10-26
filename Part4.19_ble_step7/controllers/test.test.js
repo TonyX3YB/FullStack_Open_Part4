@@ -6,3 +6,4 @@ hash:
 export: 
 import: 
 const: 
+await: 
