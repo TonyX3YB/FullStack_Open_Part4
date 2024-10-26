@@ -14,3 +14,4 @@ mongo;
 uri: 
 env: 
 test: 
+blog: 
