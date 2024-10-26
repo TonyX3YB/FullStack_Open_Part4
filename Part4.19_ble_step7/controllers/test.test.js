@@ -11,4 +11,5 @@ login:
 blog: 
 html: 
 post: 
+get: 
 
