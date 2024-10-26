@@ -6,3 +6,4 @@ port:
 const: 
 VirtualType; 
 vite: 
+root: 
