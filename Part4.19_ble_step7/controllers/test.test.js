@@ -13,3 +13,4 @@ html:
 mongo; 
 uri: 
 env: 
+test: 
