@@ -10,4 +10,5 @@ await:
 login: 
 blog: 
 html: 
+post: 
 
