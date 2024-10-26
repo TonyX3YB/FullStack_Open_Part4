@@ -5,3 +5,4 @@ port:
 hash: 
 export: 
 import: 
+const: 
