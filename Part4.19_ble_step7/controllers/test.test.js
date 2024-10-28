@@ -11,3 +11,4 @@ const:
 import: 
 export: 
 VirtualType; 
+vite: 
