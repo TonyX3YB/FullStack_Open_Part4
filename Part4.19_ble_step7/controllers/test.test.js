@@ -10,4 +10,3 @@ del:
 const: 
 import: 
 export: 
-VirtualType; 
