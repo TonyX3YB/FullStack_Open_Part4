@@ -12,4 +12,3 @@ import:
 export: 
 VirtualType; 
 vite: 
-blog: 
