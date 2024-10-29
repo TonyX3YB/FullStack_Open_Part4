@@ -13,4 +13,3 @@ export:
 VirtualType; 
 vite: 
 blog: 
-root: 
