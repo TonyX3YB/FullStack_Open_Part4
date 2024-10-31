@@ -9,4 +9,3 @@ vite:
 const: 
 req: 
 rec: 
-root: 
