@@ -16,3 +16,4 @@ require:
 express: 
 blog: 
 login: 
+del:
