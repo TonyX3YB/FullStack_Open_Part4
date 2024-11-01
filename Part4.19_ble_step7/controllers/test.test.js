@@ -1,2 +1,3 @@
 UserActivation;
 user: 
+key: 
