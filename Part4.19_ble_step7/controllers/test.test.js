@@ -17,4 +17,3 @@ express:
 blog: 
 login: 
 del:
-get: 
