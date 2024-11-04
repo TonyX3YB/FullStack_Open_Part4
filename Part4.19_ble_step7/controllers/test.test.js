@@ -7,4 +7,3 @@ post:
 get: 
 del: 
 VirtualType; 
-vite: 
