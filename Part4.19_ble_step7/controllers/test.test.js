@@ -13,3 +13,4 @@ env:
 blog: 
 const: 
 return: 
+await: 
