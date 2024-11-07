@@ -14,3 +14,4 @@ XPathExpression;
 express: 
 json: 
 Node; 
+root: 
