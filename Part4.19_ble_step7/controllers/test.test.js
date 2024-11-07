@@ -8,3 +8,4 @@ get:
 del: 
 vite: 
 const: 
+await: 
