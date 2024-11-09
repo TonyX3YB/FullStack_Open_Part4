@@ -7,3 +7,4 @@ prompt;
 port: 
 VirtualType;
 vite: 
+root: 
