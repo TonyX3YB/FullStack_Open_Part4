@@ -12,4 +12,3 @@ env:
 blog: 
 login: 
 get: 
-del: 
