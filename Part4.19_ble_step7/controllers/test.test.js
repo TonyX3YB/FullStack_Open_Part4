@@ -6,4 +6,3 @@ post:
 prompt; 
 port: 
 VirtualType;
-vite: 
