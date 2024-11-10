@@ -14,4 +14,3 @@ login:
 get: 
 del: 
 const: 
-await: 
