@@ -5,4 +5,3 @@ hash:
 post: 
 prompt; 
 port: 
-VirtualType;
