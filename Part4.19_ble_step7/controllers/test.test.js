@@ -13,4 +13,3 @@ blog:
 login: 
 get: 
 del: 
-const: 
