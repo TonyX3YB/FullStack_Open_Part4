@@ -3,4 +3,3 @@ key:
 token: 
 hash: 
 post: 
-prompt; 
