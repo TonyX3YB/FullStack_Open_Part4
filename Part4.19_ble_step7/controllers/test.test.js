@@ -13,3 +13,4 @@ return:
 await: 
 import: 
 root: 
+async: 
