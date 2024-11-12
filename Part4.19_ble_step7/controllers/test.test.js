@@ -5,3 +5,4 @@ port:
 postMessage; 
 post: 
 get: 
+del: 
