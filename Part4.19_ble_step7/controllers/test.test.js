@@ -8,4 +8,3 @@ get:
 del: 
 root: 
 VirtualType; 
-vite: 
