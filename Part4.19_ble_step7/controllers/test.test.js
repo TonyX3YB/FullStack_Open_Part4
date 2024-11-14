@@ -6,4 +6,3 @@ postMessage;
 post: 
 get: 
 del: 
-root: 
