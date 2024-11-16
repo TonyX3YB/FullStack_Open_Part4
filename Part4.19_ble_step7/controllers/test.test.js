@@ -16,3 +16,4 @@ return:
 await: 
 env: 
 root: 
+vite: 
