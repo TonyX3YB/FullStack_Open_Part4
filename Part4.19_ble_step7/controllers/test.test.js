@@ -12,3 +12,5 @@ const:
 import: 
 express: 
 export: 
+return: 
+await: 
