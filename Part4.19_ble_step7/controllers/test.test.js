@@ -17,4 +17,3 @@ await:
 env: 
 root: 
 vite: 
-SVGPathElement;
