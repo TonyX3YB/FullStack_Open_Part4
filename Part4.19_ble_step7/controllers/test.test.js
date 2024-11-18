@@ -5,3 +5,4 @@ env:
 hash: 
 password: 
 login: 
+blog: 
