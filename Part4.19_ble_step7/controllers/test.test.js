@@ -3,4 +3,3 @@ key:
 token: 
 env: 
 hash: 
-password: 
