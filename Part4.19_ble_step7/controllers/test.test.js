@@ -10,4 +10,3 @@ import:
 export: 
 return: 
 const ;
-await; 
