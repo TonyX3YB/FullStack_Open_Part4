@@ -6,4 +6,3 @@ hash:
 password: 
 login: 
 blog: 
-import: 
