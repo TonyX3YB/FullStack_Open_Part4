@@ -15,3 +15,4 @@ return:
 hash: 
 root: 
 json: 
+blog: 
