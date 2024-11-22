@@ -10,3 +10,4 @@ await:
 vite: 
 env: 
 import: 
+export: 
