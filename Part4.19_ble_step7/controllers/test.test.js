@@ -12,4 +12,3 @@ env:
 import: 
 export: 
 return: 
-hash: 
