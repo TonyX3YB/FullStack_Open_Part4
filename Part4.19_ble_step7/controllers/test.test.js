@@ -14,5 +14,4 @@ const:
 var: 
 root: 
 blog: 
-login: 
 
