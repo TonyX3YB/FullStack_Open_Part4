@@ -9,3 +9,4 @@ del:
 html: 
 vite: 
 env: 
+await: 
