@@ -12,3 +12,4 @@ env:
 await: 
 const: 
 var: 
+root: 
