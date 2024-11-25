@@ -8,5 +8,4 @@ get:
 del: 
 html: 
 vite: 
-env: 
 
