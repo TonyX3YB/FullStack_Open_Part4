@@ -1,4 +1,3 @@
 user: 
 key: 
-token: 
 
