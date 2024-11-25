@@ -7,5 +7,4 @@ post:
 get: 
 del: 
 html: 
-vite: 
 
