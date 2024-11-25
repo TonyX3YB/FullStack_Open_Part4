@@ -11,3 +11,4 @@ vite:
 env: 
 await: 
 const: 
+var: 
