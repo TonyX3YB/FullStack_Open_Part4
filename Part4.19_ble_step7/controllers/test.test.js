@@ -17,4 +17,3 @@ blog:
 login: 
 root: 
 html ;
-test: 
