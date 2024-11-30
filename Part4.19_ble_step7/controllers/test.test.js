@@ -8,4 +8,3 @@ post:
 get: 
 del: 
 const: 
-await: 
