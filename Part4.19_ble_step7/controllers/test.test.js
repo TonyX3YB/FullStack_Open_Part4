@@ -12,3 +12,4 @@ env:
 const: 
 await: 
 import: 
+export: 
