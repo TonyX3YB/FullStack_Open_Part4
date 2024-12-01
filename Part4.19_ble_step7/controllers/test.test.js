@@ -17,4 +17,3 @@ return:
 root: 
 blog: 
 login: 
-test: 
