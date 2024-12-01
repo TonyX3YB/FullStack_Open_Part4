@@ -10,4 +10,3 @@ html:
 vite: 
 env: 
 const: 
-await: 
