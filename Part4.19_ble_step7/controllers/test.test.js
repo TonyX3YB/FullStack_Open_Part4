@@ -16,3 +16,4 @@ export:
 return: 
 root: 
 env: 
+vite: 
