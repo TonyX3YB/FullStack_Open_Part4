@@ -13,3 +13,4 @@ html:
 root: 
 env: 
 vite: 
+blog: 
