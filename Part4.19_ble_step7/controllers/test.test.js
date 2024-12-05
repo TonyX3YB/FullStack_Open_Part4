@@ -7,4 +7,3 @@ bash:
 const: 
 await: 
 import: 
-export: 
