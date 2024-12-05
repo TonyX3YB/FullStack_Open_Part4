@@ -5,4 +5,3 @@ hash:
 BroadcastChannel; 
 bash: 
 const: 
-await: 
