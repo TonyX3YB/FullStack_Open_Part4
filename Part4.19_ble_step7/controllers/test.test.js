@@ -14,3 +14,4 @@ export:
 return: 
 VirtualType; 
 vite: 
+root: 
