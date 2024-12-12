@@ -14,3 +14,4 @@ del:
 html: 
 env: 
 json: 
+blog: 
