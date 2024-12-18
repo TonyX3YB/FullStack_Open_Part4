@@ -14,3 +14,4 @@ export:
 return: 
 vite:
 env: 
+root: 
