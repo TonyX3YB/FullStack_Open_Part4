@@ -5,5 +5,4 @@ hash:
 port: 
 postMessage; 
 post 
-get:
 
