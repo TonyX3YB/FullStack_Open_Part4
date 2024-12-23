@@ -14,5 +14,4 @@ import:
 export: 
 return: 
 env: 
-ShadowRoot;
 
