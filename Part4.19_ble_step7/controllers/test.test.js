@@ -3,5 +3,4 @@ key:
 token: 
 hash: 
 port: 
-postMessage; 
 
