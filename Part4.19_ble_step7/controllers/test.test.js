@@ -17,3 +17,4 @@ json:
 blog: 
 login: 
 test: 
+server: 
