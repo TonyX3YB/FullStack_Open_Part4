@@ -9,3 +9,4 @@ del:
 const: 
 await: 
 import: 
+export: 
