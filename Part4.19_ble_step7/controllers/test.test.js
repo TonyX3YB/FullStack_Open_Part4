@@ -15,4 +15,3 @@ blog:
 login: 
 root: 
 json: 
-test: 
