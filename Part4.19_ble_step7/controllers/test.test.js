@@ -17,3 +17,4 @@ root:
 blog: 
 login: 
 app:
+controller: 
