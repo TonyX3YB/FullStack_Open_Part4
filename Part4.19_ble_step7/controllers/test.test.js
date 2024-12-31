@@ -17,4 +17,3 @@ root:
 env: 
 test: 
 app: 
-term: 
