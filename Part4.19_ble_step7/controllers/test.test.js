@@ -16,4 +16,3 @@ login:
 root: 
 env: 
 test: 
-app: 
