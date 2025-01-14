@@ -6,4 +6,4 @@ prompt;
 port: 
 post: 
 get: 
-
+del: 
