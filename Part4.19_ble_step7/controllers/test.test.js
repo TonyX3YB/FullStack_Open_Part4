@@ -15,5 +15,4 @@ export;
 return: 
 json: 
 env: 
-ShadowRoot; 
 
