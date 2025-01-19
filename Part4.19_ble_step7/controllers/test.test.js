@@ -1,5 +1,4 @@
 user: 
 key: 
 token: 
-hash: 
 
