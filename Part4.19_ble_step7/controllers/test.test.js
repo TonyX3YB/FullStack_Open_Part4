@@ -11,3 +11,4 @@ const:
 await: 
 import: 
 export: 
+root: 
