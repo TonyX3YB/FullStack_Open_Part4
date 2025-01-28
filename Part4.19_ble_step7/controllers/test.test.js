@@ -16,4 +16,3 @@ env:
 root: 
 blog: 
 login: 
-application; 
