@@ -20,3 +20,4 @@ test:
 login: 
 shell: 
 project: 
+bash: 
