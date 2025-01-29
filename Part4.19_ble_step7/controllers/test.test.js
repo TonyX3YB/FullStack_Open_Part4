@@ -31,4 +31,3 @@ rem:
 username: 
 type: 
 require: 
-string: 
