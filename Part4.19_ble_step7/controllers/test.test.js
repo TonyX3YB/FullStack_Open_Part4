@@ -25,3 +25,4 @@ average:
 runner: 
 ls: 
 -all: 
+git: 
