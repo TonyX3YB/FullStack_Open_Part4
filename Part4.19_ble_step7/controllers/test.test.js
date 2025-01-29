@@ -18,4 +18,3 @@ blog:
 application; 
 test: 
 login: 
-shell: 
