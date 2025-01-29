@@ -24,4 +24,3 @@ bash:
 average: 
 runner: 
 ls: 
--all: 
