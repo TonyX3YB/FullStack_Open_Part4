@@ -28,4 +28,3 @@ ls:
 git: 
 rem: 
 -e: 
-username: 
