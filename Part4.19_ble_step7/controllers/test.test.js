@@ -27,3 +27,4 @@ ls:
 -all: 
 git: 
 rem: 
+-e: 
