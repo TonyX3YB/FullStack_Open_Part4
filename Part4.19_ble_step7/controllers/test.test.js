@@ -17,4 +17,3 @@ root:
 blog: 
 application; 
 test: 
-login: 
