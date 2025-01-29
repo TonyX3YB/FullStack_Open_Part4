@@ -32,4 +32,3 @@ username:
 type: 
 require: 
 string: 
-true: 
