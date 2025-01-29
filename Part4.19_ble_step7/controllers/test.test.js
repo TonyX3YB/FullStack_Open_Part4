@@ -29,3 +29,4 @@ git:
 rem: 
 -e: 
 username: 
+type: 
