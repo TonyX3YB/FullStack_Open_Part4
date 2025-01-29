@@ -22,4 +22,3 @@ shell:
 project: 
 bash: 
 average: 
-runner: 
