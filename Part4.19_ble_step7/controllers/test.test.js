@@ -21,4 +21,3 @@ login:
 shell: 
 project: 
 bash: 
-average: 
