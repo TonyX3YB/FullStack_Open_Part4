@@ -1,3 +1,5 @@
+import { deleteModel } from "mongoose";
+
 user: 
 KeyboardEvent; 
 key: 
@@ -25,4 +27,5 @@ type:
 schema: 
 string: 
 userschema: 
+deleteModel: 
 
