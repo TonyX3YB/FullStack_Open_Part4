@@ -16,6 +16,6 @@ pipeline {
                 echo "myString: ${myString}"
                 echo "myString: ${myString}"
 
-            }
+            
         
     
