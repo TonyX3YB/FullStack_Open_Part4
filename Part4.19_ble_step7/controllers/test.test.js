@@ -11,4 +11,3 @@ pipeline {
 
     stages{
         stage("Demo") {
-            steps {
