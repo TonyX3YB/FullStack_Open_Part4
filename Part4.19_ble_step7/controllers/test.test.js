@@ -9,4 +9,3 @@ pipeline {
         def myBool = true
     }
 
-    stages{
