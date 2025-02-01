@@ -32,7 +32,6 @@ userschema:
 deleteModel: 
 returnedobject: 
 mongoose: 
-model: 
 
 
 
