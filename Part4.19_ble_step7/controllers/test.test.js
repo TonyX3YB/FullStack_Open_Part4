@@ -10,4 +10,3 @@ pipeline {
     }
 
     stages{
-        stage("Demo") {
