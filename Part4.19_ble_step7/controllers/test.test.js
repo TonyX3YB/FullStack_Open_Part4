@@ -13,9 +13,7 @@ get:
 del: 
 html: 
 const: 
-await: 
-import: 
- 
+await:  
 
 
 
