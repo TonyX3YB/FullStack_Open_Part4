@@ -13,8 +13,3 @@ pipeline {
         stage("Demo") {
             steps {
                 echo "myString: ${myString}"
-                echo "myString: ${myString}"
-
-            
-        
-    
