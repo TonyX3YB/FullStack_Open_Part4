@@ -14,7 +14,6 @@ pipeline {
             steps {
                 echo "myString: ${myString}"
                 echo "myString: ${myString}"
-                echo "myString: ${myString}"
 
             
         
