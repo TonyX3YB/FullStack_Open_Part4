@@ -1,3 +1,5 @@
+const { deleteModel } = require("mongoose");
+
 user: 
 key: 
 token: 
@@ -23,3 +25,4 @@ Schema;
 string: 
 userschema: 
 delete: 
+deleteModel: 
