@@ -1,6 +1,6 @@
 user: 
 key: 
 token: 
-
+hash: 
 
 
