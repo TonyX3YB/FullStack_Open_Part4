@@ -1,4 +1,4 @@
-const { deleteModel } = require("mongoose");
+const { deleteModel, default: mongoose } = require("mongoose");
 
 user: 
 key: 
@@ -26,3 +26,5 @@ string:
 userschema: 
 delete: 
 deleteModel: 
+mongoose; 
+
