@@ -20,3 +20,4 @@ app:
 test: 
 type: 
 Schema; 
+string: 
