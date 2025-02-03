@@ -12,3 +12,4 @@ json:
 env: 
 post: 
 port: 
+get: 
