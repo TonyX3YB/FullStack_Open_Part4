@@ -26,5 +26,4 @@ string:
 userschema: 
 delete: 
 deleteModel: 
-mongoose; 
 
