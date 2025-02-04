@@ -25,5 +25,4 @@ Schema;
 string: 
 userschema: 
 delete: 
-deleteModel: 
 
