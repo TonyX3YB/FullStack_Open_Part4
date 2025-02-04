@@ -15,6 +15,5 @@ env:
 post: 
 port: 
 get: 
-del: 
 
 
