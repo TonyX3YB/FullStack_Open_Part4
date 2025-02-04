@@ -32,5 +32,4 @@ default:
 express: 
 extraction: 
 require: 
-pipeline: 
 
