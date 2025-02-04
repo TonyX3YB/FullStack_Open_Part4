@@ -9,6 +9,5 @@ export:
 return: 
 const: 
 await: 
-root: 
 
 
