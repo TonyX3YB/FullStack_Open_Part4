@@ -20,5 +20,4 @@ blog:
 login: 
 app: 
 test: 
-type: 
 
