@@ -41,3 +41,4 @@ extraction:
 const { json } = require("express")
 environment:
 def mystring: 
+def mynumber: 
