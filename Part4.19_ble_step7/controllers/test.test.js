@@ -30,4 +30,6 @@ required:
 type: 
 schema: 
 string: 
+userschema: 
+deleteModel: 
 
