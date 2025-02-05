@@ -45,4 +45,3 @@ def mynumber:
 def mybool: 
 stages: 
 steps: 
-echo: 
