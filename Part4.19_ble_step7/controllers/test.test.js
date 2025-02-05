@@ -44,4 +44,3 @@ def mystring:
 def mynumber: 
 def mybool: 
 stages: 
-steps: 
