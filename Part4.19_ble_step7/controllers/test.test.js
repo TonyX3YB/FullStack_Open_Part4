@@ -7,4 +7,3 @@ name:
 user: 
 KeyboardEvent: 
 key: 
-hash: 
