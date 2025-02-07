@@ -38,4 +38,3 @@ pipeline {
     envinronment
 def myNumber = 
 Hello World"
-}
