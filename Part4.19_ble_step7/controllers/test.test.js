@@ -36,4 +36,3 @@ require("express")
 pipeline {
     agent any
     envinronment
-def myNumber = 
