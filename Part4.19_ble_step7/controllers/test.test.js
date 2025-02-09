@@ -39,7 +39,6 @@ pipeline {
 environment: 
 stages: 
 hello world: 
-echo: 
 
 
 
