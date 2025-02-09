@@ -38,7 +38,6 @@ pipeline {
 }
 environment: 
 stages: 
-hello world: 
 
 
 
