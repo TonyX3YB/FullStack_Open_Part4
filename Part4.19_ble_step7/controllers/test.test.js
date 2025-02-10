@@ -25,4 +25,5 @@ schema:
 string: 
 userschema; 
 deleteModel: 
+returnedobject: 
 
