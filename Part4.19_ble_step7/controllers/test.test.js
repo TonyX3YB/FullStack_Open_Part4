@@ -34,5 +34,5 @@ extraction:
 const { json };
 require("express")
 pipeline {
-    
+   agent AnalyserNode 
 }
