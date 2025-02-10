@@ -37,4 +37,4 @@ pipeline {
    agent AnalyserNode 
 }
 envinronment
-
+def myString
