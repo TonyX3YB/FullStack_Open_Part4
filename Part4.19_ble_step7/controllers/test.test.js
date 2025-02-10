@@ -36,3 +36,5 @@ require("express")
 pipeline {
    agent AnalyserNode 
 }
+envinronment
+
