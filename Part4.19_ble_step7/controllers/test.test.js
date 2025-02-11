@@ -28,4 +28,3 @@ deleteModel:
 returnedobject: 
 mongoose: 
 model: 
-default: 
