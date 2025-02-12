@@ -37,3 +37,4 @@ pipeline {
     agent any
 }
 envinronment
+def myString
