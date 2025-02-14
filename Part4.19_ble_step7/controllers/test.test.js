@@ -23,4 +23,5 @@ app:
 required: 
 type: 
 schema: 
-     
+string: 
+    
