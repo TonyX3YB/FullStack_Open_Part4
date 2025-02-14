@@ -21,4 +21,5 @@ login:
 root: 
 app: 
 required: 
-    
+type: 
+     
