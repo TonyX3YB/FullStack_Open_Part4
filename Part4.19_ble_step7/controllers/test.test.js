@@ -32,5 +32,4 @@ model:
 default:             
 express: 
 extraction: 
-const {json}
     
