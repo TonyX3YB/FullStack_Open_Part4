@@ -28,5 +28,4 @@ userschema:
 deletemodel: 
 returnedobject: 
 mongoose: 
-model: 
     
