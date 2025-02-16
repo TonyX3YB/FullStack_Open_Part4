@@ -31,5 +31,4 @@ mongoose:
 model: 
 default:             
 express: 
-extraction: 
     
