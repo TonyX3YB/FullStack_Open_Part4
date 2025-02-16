@@ -25,5 +25,4 @@ type:
 schema: 
 string: 
 userschema: 
-deletemodel: 
     
