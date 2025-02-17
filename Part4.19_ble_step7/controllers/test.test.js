@@ -20,7 +20,9 @@
     test: 
     json: 
     required: 
+    type: 
     
+
 
 
 
