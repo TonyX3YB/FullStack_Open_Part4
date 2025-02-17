@@ -22,7 +22,9 @@
     required: 
     type: 
     schema:
+    string: 
     
+
 
 
 
