@@ -12,6 +12,8 @@
     const: 
     await: 
     import: 
+    export: 
     
+
 
 
