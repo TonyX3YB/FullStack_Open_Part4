@@ -6,5 +6,6 @@
     post: 
     get: 
     del: 
+    html: 
     
     
