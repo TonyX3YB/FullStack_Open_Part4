@@ -6,7 +6,6 @@
     post: 
     get: 
     del: 
-    html: 
     
 
 
