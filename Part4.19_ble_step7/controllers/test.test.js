@@ -5,7 +5,6 @@
     port :
     post: 
     get: 
-    del: 
     
 
 
