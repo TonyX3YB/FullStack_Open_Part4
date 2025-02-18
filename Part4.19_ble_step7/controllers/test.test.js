@@ -39,7 +39,6 @@
     def:
     myString = 
     hello world: 
-    def: 
     
 
 
