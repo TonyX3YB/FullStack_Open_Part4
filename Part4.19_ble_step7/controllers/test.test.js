@@ -38,7 +38,6 @@
     envinronment: 
     def:
     myString = 
-    hello world: 
     
 
 
