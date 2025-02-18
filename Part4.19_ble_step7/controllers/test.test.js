@@ -10,7 +10,6 @@
     env: 
     root: 
     const: 
-    await: 
     
 
 
