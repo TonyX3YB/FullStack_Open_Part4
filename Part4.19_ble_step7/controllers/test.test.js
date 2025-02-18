@@ -24,7 +24,6 @@
     schema:
     string: 
     userschema: 
-    deletemodel: 
     
 
 
