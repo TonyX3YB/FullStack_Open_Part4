@@ -23,7 +23,6 @@
     type: 
     schema:
     string: 
-    userschema: 
     
 
 
