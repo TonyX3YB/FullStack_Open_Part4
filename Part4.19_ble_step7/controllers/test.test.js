@@ -4,7 +4,6 @@
     hash: 
     port :
     post: 
-    get: 
     
 
 
