@@ -8,7 +8,6 @@
     del: 
     html: 
     env: 
-    root: 
     
 
 
