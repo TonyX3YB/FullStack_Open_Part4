@@ -22,7 +22,6 @@
     required: 
     type: 
     schema:
-    string: 
     
 
 
