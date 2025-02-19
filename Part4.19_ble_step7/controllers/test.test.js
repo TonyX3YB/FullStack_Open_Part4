@@ -42,6 +42,8 @@ myString =:
 "Hello World: "
 def: 
 myNumber = 10: 
+myBool = true: 
+
 
 
 
