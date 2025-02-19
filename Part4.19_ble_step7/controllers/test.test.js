@@ -8,6 +8,7 @@ get:
 del: 
 const: 
 await: 
+import: 
 
 
 
