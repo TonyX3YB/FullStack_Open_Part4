@@ -44,6 +44,7 @@ def:
 myNumber = 10: 
 myBool = true: 
 stages: 
+stage("Demo")
 
 
 
