@@ -19,7 +19,9 @@ application;
 app: 
 test: 
 json: 
-required: 
+required:
+type: 
+ 
 
 
 
