@@ -40,7 +40,6 @@ environment:
 def: 
 myString =: 
 "Hello World: "
-def: 
 
 
 
