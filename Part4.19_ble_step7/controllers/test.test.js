@@ -38,7 +38,6 @@ pipeline
 agent any: 
 environment: 
 def: 
-myString =: 
 
 
 
