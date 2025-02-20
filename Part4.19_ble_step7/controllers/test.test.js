@@ -43,7 +43,6 @@ myString =:
 def: 
 myNumber = 10: 
 myBool = true: 
-stages: 
 
 
 
