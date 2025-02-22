@@ -45,7 +45,6 @@ hello world:
 my number: 
 mybool: 
 stages: 
-echo: 
 
 
 
