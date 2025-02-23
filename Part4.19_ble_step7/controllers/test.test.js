@@ -34,7 +34,6 @@ extraction:
 const: 
 {json}
 =
-required
 
 
 
