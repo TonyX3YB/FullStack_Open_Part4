@@ -43,7 +43,6 @@ def:
 mystring: 
 hello world: 
 my number: 
-mybool: 
 
 
 
