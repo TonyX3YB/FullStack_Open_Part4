@@ -37,6 +37,8 @@ pipeline
 agent any: 
 environment: 
 mystring: 
+mynumber: 
+
 
 
 
