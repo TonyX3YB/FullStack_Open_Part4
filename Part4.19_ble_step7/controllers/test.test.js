@@ -39,6 +39,7 @@ environment:
 def: 
 myString: 
 hello world: 
+mybool: 
 
 
 
