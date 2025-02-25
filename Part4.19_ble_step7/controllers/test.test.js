@@ -4,7 +4,9 @@ key:
 token: 
 hash: 
 port: 
-post: 
+post:
+del: 
+ 
 
 
 
