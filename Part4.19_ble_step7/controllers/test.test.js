@@ -1,7 +1,7 @@
 UserActivation;
 user: 
 key: 
-
+token: 
 
 
 
