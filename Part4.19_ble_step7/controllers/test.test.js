@@ -21,6 +21,7 @@ json:
 app: 
 test: 
 required: 
+type: 
 
 
 
