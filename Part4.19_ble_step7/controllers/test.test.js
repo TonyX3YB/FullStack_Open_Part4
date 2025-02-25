@@ -36,6 +36,7 @@ const {json}
 pipeline: 
 agent any: 
 environment: 
+def: 
 
 
 
