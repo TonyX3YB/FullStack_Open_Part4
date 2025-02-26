@@ -1,5 +1,4 @@
 UserActivation;
-user: 
 
 
 
