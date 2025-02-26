@@ -6,7 +6,6 @@ hash:
 port: 
 post:
 del: 
-get: 
 
 
 
