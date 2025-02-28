@@ -36,7 +36,6 @@ mystring:
 mybool: 
 my number: 
 ~e: 
-def true: 
 
 
 
