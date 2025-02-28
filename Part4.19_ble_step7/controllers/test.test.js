@@ -35,7 +35,6 @@ def:
 mystring: 
 mybool: 
 my number: 
-~e: 
 
 
 
