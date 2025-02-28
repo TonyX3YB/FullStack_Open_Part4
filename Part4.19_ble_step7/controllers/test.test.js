@@ -25,7 +25,6 @@ type:
 Schema: 
 deletemodel: 
 returnedobject: 
-default: 
 
 
 
