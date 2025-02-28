@@ -27,7 +27,6 @@ deletemodel:
 returnedobject: 
 default: 
 express: 
-extraction: 
 
 
 
