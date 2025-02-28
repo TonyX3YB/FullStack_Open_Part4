@@ -33,6 +33,7 @@ agent any:
 environment: 
 def: 
 mystring: 
+mybool: 
 
 
 
