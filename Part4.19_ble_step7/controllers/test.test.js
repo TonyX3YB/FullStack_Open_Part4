@@ -34,7 +34,6 @@ environment:
 def: 
 mystring: 
 mybool: 
-my number: 
 
 
 
