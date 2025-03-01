@@ -4,7 +4,9 @@ token:
 hash: 
 port: 
 post: 
-get: 
+get:
+del: 
+ 
 
 
 
