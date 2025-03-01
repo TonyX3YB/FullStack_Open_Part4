@@ -36,6 +36,7 @@ environment:
 def: 
 mystring: 
 mybool: 
+stages: 
 
 
 
