@@ -24,7 +24,6 @@ type:
 Schema; 
 userschema: 
 deletemodel: 
-returnedobject: 
 
 
 
