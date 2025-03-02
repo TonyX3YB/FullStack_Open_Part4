@@ -25,7 +25,6 @@ Schema;
 userschema: 
 deletemodel: 
 returnedobject: 
-mongoose: 
 
 
 
