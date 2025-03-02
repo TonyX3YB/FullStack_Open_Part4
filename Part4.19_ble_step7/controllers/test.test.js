@@ -35,7 +35,6 @@ required
 environment: 
 def: 
 mystring: 
-mybool: 
 
 
 
