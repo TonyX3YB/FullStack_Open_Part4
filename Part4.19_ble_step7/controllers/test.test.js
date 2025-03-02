@@ -20,7 +20,6 @@ json:
 test: 
 app: 
 required: 
-type: 
 
 
 
