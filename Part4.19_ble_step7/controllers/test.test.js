@@ -7,7 +7,6 @@ post:
 get:
 del: 
 html: 
-root: 
 
 
 
