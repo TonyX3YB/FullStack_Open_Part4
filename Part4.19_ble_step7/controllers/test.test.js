@@ -32,7 +32,6 @@ express:
 extraction: 
 const {json}
 required
-environment: 
 
 
 
