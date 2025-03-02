@@ -37,7 +37,6 @@ def:
 mystring: 
 mybool: 
 stages: 
-demo: 
 
 
 
