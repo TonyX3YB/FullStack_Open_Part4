@@ -39,6 +39,7 @@ agent any:
 mystring: 
 mynumber: 
 mybool: 
+stages: 
 
 
 
