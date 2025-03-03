@@ -12,6 +12,8 @@ root:
 env: 
 json: 
 const; 
+await: 
+
 
 
 
