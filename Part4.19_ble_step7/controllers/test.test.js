@@ -21,7 +21,6 @@ login:
 app: 
 test: 
 required: 
-type: 
 
 
 
