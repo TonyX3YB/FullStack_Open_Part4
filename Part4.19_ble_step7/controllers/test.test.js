@@ -38,7 +38,6 @@ pipeline:
 agent any: 
 mystring: 
 mynumber: 
-mybool: 
 
 
 
