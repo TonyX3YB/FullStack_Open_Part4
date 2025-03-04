@@ -26,7 +26,6 @@ schema:
 string: 
 userschema: 
 deletemodel: 
-returnedobject: 
 
 
 
