@@ -23,7 +23,6 @@ test:
 required: 
 type: 
 schema: 
-string: 
 
 
 
