@@ -37,6 +37,7 @@ require express
 environment: 
 def
 my string: 
+my bool: 
 
 
 
