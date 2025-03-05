@@ -22,6 +22,7 @@ root:
 required: 
 type: 
 schema: 
+string: 
 
 
 
