@@ -18,7 +18,6 @@ login:
 json: 
 app: 
 test: 
-root: 
 
 
 
