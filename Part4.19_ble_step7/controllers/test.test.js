@@ -1,6 +1,5 @@
 UserActivation;
 user: 
-key: 
 
 
 
