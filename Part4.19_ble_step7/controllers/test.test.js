@@ -10,7 +10,6 @@ html:
 root: 
 env: 
 const: 
-await: 
 
 
 
