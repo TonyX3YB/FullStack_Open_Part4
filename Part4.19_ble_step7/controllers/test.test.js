@@ -34,6 +34,7 @@ environment:
 def 
 mystring: 
 hello world: 
+my bool: 
 
 
 
