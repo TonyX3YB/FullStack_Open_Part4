@@ -37,6 +37,7 @@ Pipeline:
 agent: 
 any: 
 my def: 
+my bool: 
 
 
 
