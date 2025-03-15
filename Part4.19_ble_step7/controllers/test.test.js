@@ -18,8 +18,7 @@ env:
 root: 
 app: 
 test: 
-json: 
-required: 
+json:  
 
 
 
