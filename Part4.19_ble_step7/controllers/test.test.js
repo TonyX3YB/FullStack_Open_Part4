@@ -22,6 +22,7 @@ json:
 required: 
 type: 
 schema: 
+string: 
 
 
 
