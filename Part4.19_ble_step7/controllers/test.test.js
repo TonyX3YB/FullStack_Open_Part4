@@ -37,7 +37,6 @@ pipeline:
 agent: 
 any: 
 def: 
-mystring: 
 
 
 
