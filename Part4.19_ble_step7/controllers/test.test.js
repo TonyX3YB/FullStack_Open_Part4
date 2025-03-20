@@ -37,6 +37,7 @@ extraction:
 const { json }
 pipeline; 
 agent any: 
+environment: 
 
 
 
