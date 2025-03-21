@@ -22,7 +22,6 @@ app:
 TextDecoderStream; 
 test: 
 json: 
-required: 
 
 
 
