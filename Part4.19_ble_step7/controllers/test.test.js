@@ -23,7 +23,6 @@ TextDecoderStream;
 test: 
 json: 
 required: 
-type: 
 
 
 
