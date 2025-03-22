@@ -25,7 +25,6 @@ type:
 schema: 
 string: 
 userschema: 
-deleteModel: 
 
 
 
