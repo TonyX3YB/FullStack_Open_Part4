@@ -1,7 +1,6 @@
 
 KeyboardEvent; 
 key: 
-hash: 
 
 
 
