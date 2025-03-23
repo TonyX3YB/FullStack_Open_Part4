@@ -2,7 +2,6 @@
 KeyboardEvent; 
 key: 
 hash: 
-token: 
 
 
 
