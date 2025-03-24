@@ -11,7 +11,6 @@
 user: 
 KeyboardEvent; 
 key: 
-hash: 
 
 
 
