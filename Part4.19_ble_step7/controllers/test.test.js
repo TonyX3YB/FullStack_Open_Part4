@@ -31,7 +31,6 @@ app:
 test: 
 json: 
 required: 
-type: 
 
 
 
