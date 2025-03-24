@@ -16,7 +16,6 @@ token:
 port: 
 post: 
 get: 
-del: 
 
 
 
