@@ -2,7 +2,6 @@
 
 
 
-        def myBool = true
 
 
 
