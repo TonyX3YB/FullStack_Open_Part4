@@ -1,5 +1,4 @@
 
-mongoose: 
 model: 
 default: 
 express: 
