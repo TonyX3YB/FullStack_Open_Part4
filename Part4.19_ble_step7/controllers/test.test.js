@@ -1,5 +1,4 @@
 
-root: 
 app: 
 test: 
 json: 
