@@ -1,5 +1,4 @@
 
-KeyboardEvent; 
 key: 
 hash: 
 token: 
