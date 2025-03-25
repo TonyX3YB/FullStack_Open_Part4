@@ -1,5 +1,4 @@
 
-json: 
 required: 
 type: 
 schema: 
