@@ -1,7 +1,6 @@
 
 
 
-    agent any 
 
     envinronment {
         def myString = "Hello World"
