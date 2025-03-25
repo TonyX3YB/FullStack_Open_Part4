@@ -1,5 +1,4 @@
 
-post: 
 get: 
 del: 
 html: 
