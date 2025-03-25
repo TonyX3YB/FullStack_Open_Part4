@@ -1,5 +1,4 @@
 
-get: 
 del: 
 html: 
 const: 
