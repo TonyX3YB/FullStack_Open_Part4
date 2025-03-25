@@ -1,5 +1,4 @@
 
-schema: 
 string: 
 userschema: 
 deleteModel: 
