@@ -1,5 +1,4 @@
 
-deleteModel: 
 returnedobject: 
 mongoose: 
 model: 
