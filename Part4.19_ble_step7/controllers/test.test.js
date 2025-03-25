@@ -1,5 +1,4 @@
 
-type: 
 schema: 
 string: 
 userschema: 
