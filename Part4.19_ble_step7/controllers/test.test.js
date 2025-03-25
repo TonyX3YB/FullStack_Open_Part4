@@ -1,5 +1,4 @@
 
-userschema: 
 deleteModel: 
 returnedobject: 
 mongoose: 
