@@ -1,5 +1,4 @@
 
-string: 
 userschema: 
 deleteModel: 
 returnedobject: 
