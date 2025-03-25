@@ -1,5 +1,4 @@
 
-returnedobject: 
 mongoose: 
 model: 
 default: 
