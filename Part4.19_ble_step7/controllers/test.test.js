@@ -1,5 +1,4 @@
 
-hash: 
 token: 
 port: 
 post: 
