@@ -1,5 +1,4 @@
 
-blog: 
 login: 
 env: 
 root: 
