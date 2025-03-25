@@ -2,7 +2,6 @@
 
 
 
-        def myNumber = 10
         def myBool = true
 
 
