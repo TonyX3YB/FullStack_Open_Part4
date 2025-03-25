@@ -1,5 +1,4 @@
 
-key: 
 hash: 
 token: 
 port: 
