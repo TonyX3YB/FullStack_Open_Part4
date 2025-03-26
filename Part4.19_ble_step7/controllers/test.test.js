@@ -28,7 +28,6 @@ string:
 userschema: 
 deleteModel: 
 returnedobject: 
-mongoose: 
 
 
 
