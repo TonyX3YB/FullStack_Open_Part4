@@ -41,5 +41,4 @@ pipeline {
 
     envinronment {
         def myString = "Hello World"
-        def myNumber = 10
 
