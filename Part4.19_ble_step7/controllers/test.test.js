@@ -46,4 +46,3 @@ pipeline {
     }
 
     stages{
-        stage("Demo") {
